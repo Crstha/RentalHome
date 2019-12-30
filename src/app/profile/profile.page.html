@@ -1,0 +1,61 @@
+<ion-header id="header" color="primary">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="create"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Your Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content ion-padding>
+  <ion-item>
+    <ion-grid>
+      <ion-col style="display:flex; justify-content: center;">
+        <ion-row>
+            <ion-avatar class="prof">
+              <img src="./assets/Images/download.png">
+            </ion-avatar>
+            <ionic4-star-rating #rating0 
+                class="profilerating"
+                style="display:flex; justify-content: center;"
+                activeIcon = "ios-star"
+                defaultIcon = "ios-star-outline"
+                activeColor = "#488aff" 
+                defaultColor = "#aaaaaa"
+                readonly="true"
+                rating="3"
+                fontSize = "32px"
+                (ratingChanged)="logRatingChange($event)">
+            </ionic4-star-rating>
+        </ion-row>
+      </ion-col>
+    </ion-grid>
+  </ion-item>
+
+  <ion-item>
+    <ion-list>
+      <ion-label class="name">Name</ion-label>
+      <ion-label class="address">Address</ion-label>
+      <ion-label class="prev">Previous Apartment </ion-label>
+    </ion-list>
+    <ion-button class="viewadditionalbtn" color="primary" size="default" fill="clear">View Additional Details</ion-button>
+  </ion-item> 
+
+  <ion-label class="lblReview">Reviews:</ion-label>
+  <ion-item>
+    <ion-avatar class="avatar" slot="start">
+      <img src="./assets/Images/download.png">
+    </ion-avatar>
+    <ion-label>
+      <h1 class="heading">Dr.Anthrax Shrestha</h1>
+      <p class="paragraph">
+          Uppalapati Venkata Satyanarayana Prabhas Raju 
+      </p>     
+    </ion-label>
+  </ion-item>
+</ion-content>

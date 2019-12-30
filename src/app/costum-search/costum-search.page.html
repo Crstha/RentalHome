@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Costum Search</ion-title>
+    <ion-buttons>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-item>
+    <ion-label class="location">Location</ion-label>
+    <ion-searchbar animated class="size"></ion-searchbar>
+  <ion-icon name="pin"></ion-icon>
+  </ion-item>
+</ion-header>
+
+<ion-content>
+  <ion-label class="searchradius">Search Radius</ion-label>
+  <ion-item>
+    <ion-range class="range" min="0" max="100" color="secondary">
+      <ion-label slot="start">0 Km</ion-label>
+      <ion-label slot="end">100 Km</ion-label>
+    </ion-range>
+  </ion-item>
+  <ion-list>
+    <ion-radio-group class="radiogrp">
+      <ion-item class="homelabel">
+        <ion-label>Home</ion-label>
+        <ion-radio slot="start" value="biff" checked></ion-radio>
+      </ion-item>
+      <ion-item class="apartmentlabel">
+        <ion-label>Apartment</ion-label>
+        <ion-radio slot="start" value="griff"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+
+
+  <ion-item class="propertyabove">
+    
+  <ion-label>Property Above</ion-label>
+  <ionic4-star-rating #rating
+      activeIcon = "ios-star"
+      defaultIcon = "ios-star-outline"
+      activeColor = "#488aff" 
+      defaultColor = "#aaaaaa"
+      readonly="false"
+      rating="3"
+      fontSize = "32px"
+      (ratingChanged)="logRatingChange($event)">
+  </ionic4-star-rating>
+  </ion-item>
+  <ion-item class="landlordabove">
+    <ion-label>Landlord Above</ion-label>  
+
+    <ionic4-star-rating #rating2
+        activeIcon = "ios-star"
+        defaultIcon = "ios-star-outline"
+        activeColor = "#d1301a"
+        defaultColor = "#aaaaaa"
+        readonly = "false"
+        rating = "3"
+        fontSize = "32px"
+        (ratingChanged)="logRatingChange2($event)">
+    </ionic4-star-rating>
+    
+  </ion-item>
+
+  <ion-label class="securityposition">Security Guard</ion-label>
+  <ion-list>
+    <ion-radio-group>
+      <ion-item>
+        <ion-label class="yeslabel">Yes</ion-label>
+        <ion-radio slot="start" value="biff" checked></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label class="nolabel">No</ion-label>
+        <ion-radio slot="start" value="griff"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+
+  
+
+
+</ion-content>
+
