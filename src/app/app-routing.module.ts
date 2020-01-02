@@ -16,6 +16,10 @@ const routes: Routes = [
     path: 'propertyprofile',
     loadChildren: () => import('./propertyprofile/propertyprofile.module').then( m => m.PropertyprofilePageModule)
   },
+  {
+    path: 'editprofile',
+    loadChildren: () => import('./editprofile/editprofile.module').then( m => m.EditprofilePageModule)
+  },
 ];
 
 @NgModule({

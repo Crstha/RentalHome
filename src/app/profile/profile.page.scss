@@ -2,22 +2,56 @@
     margin-top: 10%;
     margin-left: 25%;
 }
-.name{
+
+
+.namelbl{
+    border:2px solid rgb(240, 29, 29);
     font-size: 25px;
 }
+
+.addresslbl{
+    font-size: 21px;
+    border:2px solid rgb(240, 29, 29);
+}
+
+.apartmentlbl{
+    font-size: 21px;
+    border:2px solid rgb(240, 29, 29);
+}
+
+.namefield{
+    font-size: 21px;
+    border:2px solid rgb(240, 29, 29);
+}
+
+.addressfield{
+    font-size: 21px;
+    border:2px solid rgb(240, 29, 29);
+}
+
+.apartmentfield{
+    font-size: 21px;
+    border:2px solid rgb(240, 29, 29);
+}
+
 .address{
     margin-top: 10%;
-    font-size: 25px;
+    font-size: 21px;
+    border:2px solid rgb(240, 29, 29);
 }
+
 .prev{
     margin-top: 10%;
-    font-size: 25px;
+    font-size: 21px;
+    border:2px solid rgb(240, 29, 29);
 }
+
 .viewadditionalbtn{
-    margin-top: 40%;
-    margin-left: 15%;
-    transform: translate(-113%);
-    font-size: 22px;
+    // margin-top: 40%;
+    // margin-left: 15%;
+    // transform: translate(-113%);
+    font-size: 23px;
+    border:2px solid rgb(240, 29, 29);
 }
 
 .lblReview{
@@ -37,8 +71,8 @@
     display: block;
     border-radius: 120px;
     border: 1px solid #fff;
-    width: 150px;
-    height:150px;
+    width: 100px;
+    height:100px;
     margin: 30px auto 0;
     
 }
