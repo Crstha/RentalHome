@@ -16,13 +16,38 @@
 
 .pin{
     border: 2px solid purple;
-    margin-right: 40%;
-    margin-left: 48%;
+    // margin-right: 40%;
+    margin-left: 1%;
+    margin-top: 10%;
+    transform: translate(-100%);
 }
 
+.avrrating{
+    font-size: 20px;
+    border: 2px solid blue;
+}
+.profilerating1{
+    border: 2px solid red;
+}
+.namelbl{
+    font-size: 18px;
+}
 
-.reviewbtn{
-    margin-top: 35%;
+.ratinglbl{
+    font-size: 18px;
+}
+.info{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 2px solid black;
+}
+.profile{
+    display: block;
+    border-radius: 120px;
+    border: 1px solid #fff;
+    width: 65px;
+    height:65px;
 }
 
 .fes{
@@ -31,14 +56,24 @@
 }
 
 .electricity{
-    margin-bottom:2%;
+    
+}
+.electricityfield{
+    font-size: 20px;
 }
 
 .furnished{
-    margin-bottom: 2%;
+   font-size: 20px;
+}
+
+.furnishedfield{
+    font-size: 20px;
 }
 
 .security{
-    margin-bottom:2%;
+    font-size: 20px;
 }
 
+.securityfield{
+    font-size: 20px;
+}
