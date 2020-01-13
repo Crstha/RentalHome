@@ -1,34 +1,20 @@
 .locationlbl{
     font-size: 25px;
-    border: 2px solid blue;
+    
 
 }
 
 .locationfield{
     font-size: 25px;
-    border: 2px solid green;
-
-}
-.viewmapbtn{
-    border: 2px solid green;
     
+
 }
 
-.pin{
-    border: 2px solid purple;
-    // margin-right: 40%;
-    margin-left: 1%;
-    margin-top: 10%;
-    transform: translate(-100%);
-}
 
 .avrrating{
     font-size: 20px;
-    border: 2px solid blue;
 }
-.profilerating1{
-    border: 2px solid red;
-}
+
 .namelbl{
     font-size: 18px;
 }
@@ -40,7 +26,6 @@
     font-size: 20px;
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    border: 2px solid black;
 }
 .profile{
     display: block;
@@ -56,8 +41,9 @@
 }
 
 .electricity{
-    
+    font-size: 20px;
 }
+
 .electricityfield{
     font-size: 20px;
 }

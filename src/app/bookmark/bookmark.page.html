@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="title">Bookmark</ion-title>
+    <ion-buttons>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar showCancelButton="focus"></ion-searchbar>
+
+  <ion-card *ngFor="let item of items">
+    <img src="./assets/Images/download.jpg">
+    <ion-card-header>
+      <ion-item>        
+        <ion-card-subtitle>Mr.Subash Tamang</ion-card-subtitle>
+        <ionic4-star-rating #rating0 
+          class="personrating"
+          style="display:flex; justify-content: center;"
+          activeIcon = "ios-star"
+          defaultIcon = "ios-star-outline"
+          activeColor = "#488aff" 
+          defaultColor = "#aaaaaa"
+          readonly="true"
+          rating="3"
+          fontSize = "16px"
+          (ratingChanged)="logRatingChange($event)">
+    </ionic4-star-rating>
+      </ion-item>
+    <ion-item>
+      <ion-card-title class="propertyname">5 Bedroom House</ion-card-title>
+      <ionic4-star-rating #rating0 
+          class="propertyrating"
+          style="display:flex; justify-content: center;"
+          activeIcon = "ios-star"
+          defaultIcon = "ios-star-outline"
+          activeColor = "#488aff" 
+          defaultColor = "#aaaaaa"
+          readonly="true"
+          rating="3"
+          fontSize = "16px"
+          (ratingChanged)="logRatingChange($event)">
+          </ionic4-star-rating>
+    </ion-item>
+    <ion-item>
+      <ion-label class="location">Baluwatar,Ktm
+        <ion-icon name="pin"></ion-icon>
+      </ion-label>
+    </ion-item>
+    </ion-card-header>
+    
+  </ion-card>
+
+</ion-content>
