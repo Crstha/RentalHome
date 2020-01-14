@@ -28,9 +28,40 @@
   </ion-grid>
 </ion-item>
 
+
 <ion-card class="card">
   <img src=".\assets\Images\download.jpg"/>
 </ion-card>
+<ion-icon class="addbtn" name="add-circle"></ion-icon>
+
+<ion-item  class="avrratinglbl">
+  <ion-row>
+    <ion-col>
+      <ion-label class="avrrating">Average Rating:</ion-label>
+    </ion-col>
+    <ion-col>
+      <ionic4-star-rating #rating0 
+      class="propertyrating1"
+      style="display:flex; justify-content: center;"
+      activeIcon = "ios-star"
+      defaultIcon = "ios-star-outline"
+      activeColor = "#488aff" 
+      defaultColor = "#aaaaaa"
+      readonly="true"
+      rating="3"
+      fontSize = "20px"
+      (ratingChanged)="logRatingChange($event)">
+      </ionic4-star-rating>
+    </ion-col>
+  </ion-row>
+</ion-item>
+
+<ion-item>
+<ion-buttons class="reviewbtn">
+  <ion-button color="primary" size="default" fill="clear">View Detailed Reviews</ion-button>
+</ion-buttons>
+</ion-item>
+
 
 <ion-card>
   <ion-row>
@@ -52,7 +83,7 @@
       <ion-label class="namelbl">Prabhas Raju Uppalapati</ion-label><br><br>
       <ion-label class="ratinglbl">Rating:</ion-label>
       <ionic4-star-rating #rating0 
-                class="profilerating2"
+                class="profilerating1"
                 style="display:flex; justify-content: center;"
                 activeIcon = "ios-star"
                 defaultIcon = "ios-star-outline"
@@ -82,35 +113,5 @@
     <ion-label class="securityfield">Yes</ion-label>
   </ion-item>
 </ion-list>
-
-
-
-<ion-item>
-  <ion-row>
-    <ion-col>
-      <ion-label class="avrrating">Average Rating:</ion-label>
-    </ion-col>
-    <ion-col>
-      <ionic4-star-rating #rating0 
-      class="profilerating1"
-      style="display:flex; justify-content: center;"
-      activeIcon = "ios-star"
-      defaultIcon = "ios-star-outline"
-      activeColor = "#488aff" 
-      defaultColor = "#aaaaaa"
-      readonly="true"
-      rating="3"
-      fontSize = "20px"
-      (ratingChanged)="logRatingChange($event)">
-      </ionic4-star-rating>
-    </ion-col>
-  </ion-row>
-</ion-item>
-
-<ion-item>
-<ion-buttons class="reviewbtn">
-  <ion-button color="primary" size="default" fill="clear">View Detailed Reviews</ion-button>
-</ion-buttons>
-</ion-item>
 
 </ion-content>
