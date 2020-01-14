@@ -1,3 +1,16 @@
+ion-content.background{
+    --background:url(../../assets/Images/images.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+.no-scroll.scroll-content{
+    overflow: hidden;
+}
+
+
 .editprof{
     display: block;
     border-radius: 120px;
@@ -9,12 +22,13 @@
 
 .editphoto{
     display: block;
-    border-radius: 90px;
-    border: 1px solid black;
-    width: 40px;
-    height:40px;
+    border-radius: 120px;
+    border: 2px solid #fff;
+    background-color: #cccfcf;
+    width: 30px;
+    height:30px;
     margin-left: 45%;
-
+    transform: translate(80%,-90%)
 }
 
 .pn{

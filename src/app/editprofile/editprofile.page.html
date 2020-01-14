@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header color="primary">
   <ion-buttons>
     <ion-back-button></ion-back-button>
   </ion-buttons>
@@ -8,7 +8,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="background no-scroll">
   <ion-avatar class="editprof">
     <img src="./assets/Images/download.png">
   </ion-avatar>
@@ -17,13 +17,13 @@
   <ion-list>
 
     <ion-item>
-      <ion-label class="fa" position="stacked">First Name</ion-label>
+      <ion-label class="fa" position="stacked">Full Name</ion-label>
       <ion-input type="text"></ion-input>
     </ion-item>
   
     <ion-item>
-      <ion-label class="la" position="stacked">Last Name</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-label class="la" position="stacked">Phone Number</ion-label>
+      <ion-input type="number"></ion-input>
     </ion-item>
 
     <ion-item>
@@ -32,21 +32,14 @@
     </ion-item>
   
     <ion-item>
-      <ion-label class="pa" position="stacked">Permanent Address</ion-label>
-      <ion-input type="text"></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-label position="stacked" class="pn">Phone Number</ion-label>
-      <ion-input type="text"></ion-input>
-    </ion-item>
-  
-    <ion-item>
       <ion-label class="pw" position="stacked">Password</ion-label>
       <ion-input type="password"></ion-input>
     </ion-item>
-  
   </ion-list>
+
+  <section>
+    <ion-button expand="block">Save</ion-button>
+  </section>
 
 
 </ion-content>
